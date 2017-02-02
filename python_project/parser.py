@@ -11,9 +11,9 @@ root=tree.getroot()
 z=root.getchildren()[2].getchildren()[0].getchildren()[3]
 length = len(z)
 
-f= open('det.csv','w')
+f= open('streamdata.csv','w')
 writer = csv.writer(f) 
-writer.writerow(['ID']+['Status'])
+writer.writerow(['Detector-ID']+['Status'])
 ## Get the ID and status from XML
 for i in range(1,length,1):
          detid =z.getchildren()[i].getchildren()[0].text
